@@ -41,13 +41,25 @@ body {
   z-index: -1;
 }
 
+.bg-shape2 {
+  position: fixed;
+  bottom: 0;
+  right: -10%;
+  height: 80vh;
+  width: 70vh;
+  background-color: var(--app-bg-color);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: -1;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-  gap: 5rem;
+  gap: 10rem;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   height: 100vh;
@@ -205,6 +217,7 @@ body {
   background-color: var(--white);
   border-radius: 1rem;
   margin: 1rem;
+  margin-left: auto;
   width: 65%;
 }
 
@@ -226,23 +239,17 @@ body {
   border-radius: 2rem;
 }
 
-.type-msg span {
-  display: inline-grid;
-  place-items: center;
-  align-items: center;
+.type-msg button {
+  font: inherit;
   width: 3rem;
   height: 3rem;
+  font-size: 1.5rem;
+  color: var(--white);
   background-color: hsl(271, 36%, 24%);
+  border: 0;
   border-radius: 50%;
   margin-left: -3rem;
-}
-
-.type-msg span:after {
-  content: '';
-  border: solid var(--white);
-  border-width: 0 3px 3px 0;
-  padding: 5px;
-  rotate: -45deg;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
